@@ -1,0 +1,24 @@
+{% extends "skeleton.html" %}
+{% block content %}
+	<p> Watch out, the form is not vulnerable to jinja2 injections. The URL on the other hand... Try making an injection by setting an injection value. Make sure to use "injection=__your injection__" in the URL. The flag can be gotten by viewing the secret_ua parameter. To test that you're injecting correctly you could do some math! </p>
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Log In</legend>
+                <div class="form-group">
+                    {{ form.email(class="form-control form-control-lg") }}
+                </div>
+                <br>
+                <div class="form-group">
+                    {{ form.password(class="form-control form-control-lg") }}
+                </div>
+            </fieldset>
+            <br>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}

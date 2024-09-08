@@ -1,0 +1,19 @@
+{% extends "skeleton.html" %}
+{% block content %}
+
+<script>
+    function getAgent() {
+      var agent = navigator.userAgent;
+      document.getElementById("userAgent").innerHTML = agent;
+    }
+</script>
+
+<body onload="getAgent()">
+
+    <p>Your user agent is <span id="userAgent"></span></p>
+
+</body>
+
+
+
+{% endblock content %}

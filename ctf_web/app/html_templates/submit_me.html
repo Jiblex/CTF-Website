@@ -1,0 +1,16 @@
+{% extends "skeleton.html" %}
+{% block content %}
+
+<form method="POST" action="" enctype="multipart/form-data">
+	<fieldset class="form-group">
+		<legend class="border-bottom mb-4"> Submit ME ;) </legend>
+		<div> This page only accepts PDF's. Good luck submitting anything else. </div>
+		<br>
+		<div class="form-group">
+			<input type="file" name="file" />
+			<input type="submit" value="Upload" />
+		</div>
+	</fieldset>
+</form>
+
+{% endblock content %}
