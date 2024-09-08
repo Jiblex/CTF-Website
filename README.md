@@ -14,6 +14,8 @@ Libmagic may also cause some problems, to fix this issue refer to <a href="https
 
 For making a virtualenv, refer to documentation. You do not need one in order to run the website. 
 
+Note that some browsers may not be able to load some pages, Safari and Chrome had no issues, FireFox however could not always load a page. 
+
 
 <br>
 
