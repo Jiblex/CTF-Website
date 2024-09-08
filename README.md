@@ -6,7 +6,14 @@ This is some work intended for the Northeatern CTF Club, where some of these cha
 
 When working on the website, all of the required packages and libraries lived in a venv, however the directory containing all of these files grew rather large, and due to trouble uploading it all onto github I decided to omit the venv. All required packages and libraries have been placed in the _requirements.txt_ file (ctf_web/requirements.txt), this way no unnecessary installations need be made. The requirements file can be used with pip (_pip install -r requirements.txt_), or may also be ran in a Dockerfile. An example Dockerfile has been provided (ctf_web/Dockerfile). 
 
-Below I will paste the complete README.md file I used for documentation throughout the challenge creation process. It contains every challenge, along with its description, solution and flag. It also includes some commands which can be used at the top to run the website, however if downloading, these commands may not work without setup. Refer to venv and Flask documentation for the _source_ and _flask run_ commands and how to setup these up. It also contains some user credentials. 
+Below I will paste the complete README.md file I used for documentation throughout the challenge creation process. It contains every challenge, along with its description, solution and flag. It also includes some commands which can be used at the top to run the website, however if downloading, these commands may not work without setup.
+
+If _flask run_ does not work, you can alternatively run _python run.py_, however to setup flask run simply use the command _export FLASK_APP=run.py_. Now _flask run_ should work. 
+
+Libmagic may also cause some problems, to fix this issue refer to <a href="https://hatchjs.com/failed-to-find-libmagic-check-your-installation/"> this page  </a> to properly install it, as it is not a pip installatoin. 
+
+For making a virtualenv, refer to documentation. You do not need one in order to run the website. 
+
 
 <br>
 <br>
